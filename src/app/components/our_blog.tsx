@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -8,20 +9,22 @@ const Our_blog = () => {
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col">
       <div className="h-1 bg-gray-200 rounded overflow-hidden">
-        <div className="w-24 h-full bg-indigo-500" />
-      </div>
+        {/* {/* <div className="w-24 h-full bg-indigo-500" /> */}
+       </div> 
       <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12 justify-center items-center">
         
-        <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0 text-center">
+        <div className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0 text-center">
         <h1 className='font-medium title-font text-4xl text-center'> Our Blogs</h1>
         Find a bright ideal to suit your taste with our great selection
-        </p>
+        </div>
       </div>
     </div>
     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
       <div className="p-4 md:w-1/3 sm:mb-0 mb-6 hover:border-2 border-blue-800">
         <div className="rounded-lg h-64 overflow-hidden ">
-          <img
+          <Image
+          height={200}
+          width={200}
             alt="content"
             className="object-cover object-center h-full w-full"
             src="/Rectangle 13.png"
@@ -39,10 +42,12 @@ const Our_blog = () => {
       </div>
       <div className="p-4 md:w-1/3 sm:mb-0 mb-6 hover:border-2 border-blue-800">
         <div className="rounded-lg h-64 overflow-hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             alt="content"
             className="object-cover object-center h-full w-full"
-            src="Rectangle 14.png"
+            src="/Rectangle 14.png"
           />
         </div>
         
@@ -57,10 +62,12 @@ const Our_blog = () => {
       </div>
       <div className="p-4 md:w-1/3 sm:mb-0 mb-6 hover:border-2 border-blue-900" >
         <div className="rounded-lg h-64 overflow-hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             alt="content"
             className="object-cover object-center h-full w-full"
-            src="Rectangle 15.png"
+            src="/Rectangle 15.png"
           />
         </div>
        

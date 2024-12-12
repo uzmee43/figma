@@ -22,7 +22,7 @@ const Table = () => {
             {/* Text */}
             <div className="flex flex-col items-start lg:items-center lg:text-center">
               <span className="font-bold text-3xl">Side table</span>
-              <Link href={"/"}>
+              <Link href={"/shop"}>
               <p className="underline underline-offset-2">View More</p>
               </Link>
             </div>
@@ -45,7 +45,7 @@ const Table = () => {
             {/* Text */}
             <div className="flex flex-col items-start lg:items-center lg:text-center">
               <span className="font-bold text-3xl">Side table</span>
-              <Link href={"/"}>
+              <Link href={"/shop"}>
               <p className="underline underline-offset-2">View More</p>
               </Link>
             </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
           <nav className="sm:ml-auto sm:mr-auto flex flex-wrap items-center text-base justify-center gap-6 sm:gap-10">
             <Link href={"/"} className="hover:text-gray-900">Home</Link>
             <Link href={"/shop"} className="hover:text-gray-900">Shop</Link>
-            <Link href={"/about"} className="hover:text-gray-900">About</Link>
+            <Link href={"/blog"} className="hover:text-gray-900">About</Link>
             <Link href={"/contact"} className="hover:text-gray-900">Contact</Link>
           </nav>
 
