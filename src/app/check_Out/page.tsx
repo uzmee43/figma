@@ -17,7 +17,7 @@ const CheckoutPage = () => {
     textarea: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setBillingDetails({
       ...billingDetails,
@@ -132,9 +132,9 @@ const CheckoutPage = () => {
             className="border p-2 w-full col-span-2"
           />
           <textarea
-            typeof='textarea'
-            name="text"
-            value={billingDetails.email}
+          
+            name="textarea"
+            value={billingDetails.textarea}
             onChange={handleChange}
             placeholder="Additional information"
             className="border p-2 w-full col-span-2"
