@@ -128,7 +128,7 @@ const page = () => {
                   - 1 +
                 </button>
                 <Link href={"/card_sidebar"}>
-                  <button className="w-[215px] h-[64px] p-0 border-[1px] hover:border-gray-600 rounded-lg inline-flex items-center justify-center text-gray-500 ml-4">
+                  <button className="w-[215px] h-[64px] p-0 border-[4px] hover:border-gray-600 rounded-lg inline-flex items-center justify-center text-gray-500 ml-4">
                     Add To Cart
                   </button>
                 </Link>

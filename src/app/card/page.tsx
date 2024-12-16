@@ -17,14 +17,30 @@ const CartPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-6 w-full">
       {/* Header Image */}
-      <div className="w-full">
-        <Image
-          className="w-full object-cover"
-          src="/Rectangle 1.png"
-          height={100}
-          width={1440}
-          alt="Header"
-        />
+      <div
+        className="relative w-full h-[316px] bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/Rectangle 1.png')",
+        }}
+      >
+        <div className="flex items-center justify-center h-full">
+          <div className="text-center">
+            <Image
+              src={"/House_Logos-05.png"}
+              height={50}
+              width={50}
+              alt="ima"
+              className="w-[77px] h-[77px] mx-auto"
+            ></Image>
+            <h1 className="text-3xl font-bold">Cart</h1>
+            <Link href={"/"}>
+              <p className="text-sm">
+                <span className="text-gray-500">Home</span> &gt;{" "}
+                <span className="text-black">cart</span>
+              </p>
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* Cart Section */}
@@ -54,7 +70,9 @@ const CartPage = () => {
                     />
                     <span className="p-14">Asgaard sofa</span>
                   </td>
-                  <td className="px-2 sm:px-4 py-20">Rs. {price.toLocaleString("en-PK")}</td>
+                  <td className="px-2 sm:px-4 py-20">
+                    Rs. {price.toLocaleString("en-PK")}
+                  </td>
                   <td className="px-2 sm:px-4 py-20">
                     <input
                       type="number"
@@ -63,7 +81,9 @@ const CartPage = () => {
                       className="w-12 border border-gray-300 rounded p-1 text-center"
                     />
                   </td>
-                  <td className="px-4 py-2">Rs. {subtotal.toLocaleString("en-PK")}</td>
+                  <td className="px-4 py-2">
+                    Rs. {subtotal.toLocaleString("en-PK")}
+                  </td>
                   <td className="px-4 py-2 text-2xl text-[#FBEBB5]">
                     <AiFillDelete />
                   </td>
@@ -82,13 +102,14 @@ const CartPage = () => {
               </div>
               <div className="flex justify-between mb-4">
                 <span className="text-gray-700 font-semibold">Total</span>
-                <span className="text-yellow-500 font-bold">Rs. {subtotal.toLocaleString("en-PK")}</span>
+                <span className="text-yellow-500 font-bold">
+                  Rs. {subtotal.toLocaleString("en-PK")}
+                </span>
               </div>
               <Link href={"/Check_Out"}>
-
-              <button className="w-full border-2 hover:bg-yellow-600 text-black py-2 rounded-2xl font-semibold">
-                Check Out
-              </button>
+                <button className="w-full border-2 hover:bg-yellow-600 text-black py-2 rounded-2xl font-semibold">
+                  Check Out
+                </button>
               </Link>
             </div>
           </div>

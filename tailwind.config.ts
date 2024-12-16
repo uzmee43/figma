@@ -14,10 +14,7 @@ export default {
         
         
       },
-         backgroundImage:{
-         ' heroImg' :"url('/Screenshot (122).png')",
-          
-         }
+        
       
       
     },

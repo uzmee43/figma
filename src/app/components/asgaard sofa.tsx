@@ -20,7 +20,7 @@ const Sofa = () => {
 
             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
               <Link href={"/sofa"}> 
-              <button className="flex ml-auto text-black py-2 px-6 border-2 border-gray-500 focus:outline-none hover:bg-indigo-400 rounded justify-center items-center">
+              <button className="flex ml-auto text-black py-2 px-6 border-4 border-gray-500 focus:outline-none hover:bg-indigo-400 rounded justify-center items-center">
                 Order Now
               </button>
               

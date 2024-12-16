@@ -1,24 +1,47 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosTime } from "react-icons/io";
+import Link from "next/link";
 
 const Contact = () => {
   return (
     <div className="h-full w-full">
-      <Image
-        src={"/Rectangle 1.png"}
-        height={100}
-        width={1430}
-        alt="img"
-        className="w-full h-auto"
-      />
+      <div
+        className="relative w-full h-[316px] bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/Rectangle 1.png')",
+        }}
+      >
+        <div className="flex items-center justify-center h-full">
+          <div className="text-center">
+            <Image
+              src={"/House_Logos-05.png"}
+              height={50}
+              width={50}
+              alt="ima"
+              className="w-[77px] h-[77px] mx-auto"
+            ></Image>
+            <h1 className="text-3xl font-bold">Contact</h1>
+            <Link href={"/"}>
+              <p className="text-sm">
+                <span className="text-gray-500">Home</span> &gt;{" "}
+                <span className="text-black">Contact</span>
+              </p>
+            </Link>
+          </div>
+        </div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h2 className="text-3xl font-bold text-center mb-4">Get In Touch With Us</h2>
+        <h2 className="text-3xl font-bold text-center mb-4">
+          Get In Touch With Us
+        </h2>
         <p className="text-center text-gray-600 mb-8">
-          For More Information About Our Product & Services, Please Feel Free To Drop Us <br className="hidden md:block" /> An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
+          For More Information About Our Product & Services, Please Feel Free To
+          Drop Us <br className="hidden md:block" /> An Email. Our Staff Always
+          Be There To Help You Out. Do Not Hesitate!
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

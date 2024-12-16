@@ -1,15 +1,36 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Shop = () => {
   return (
     <div className="h-full w-full">
-      <Image
-        src={"/Rectangle 1.png"}
-        height={100}
-        width={1430}
-        alt="img"
-      ></Image>
+      <div
+        className="relative w-full h-[316px] bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/Rectangle 1.png')",
+        }}
+      >
+        <div className="flex items-center justify-center h-full">
+          <div className="text-center">
+            <Image
+              src={"/House_Logos-05.png"}
+              height={50}
+              width={50}
+              alt="ima"
+              className="w-[77px] h-[77px] mx-auto"
+            ></Image>
+            <h1 className="text-3xl font-bold">Shop</h1>
+            <Link href={"/"}>
+              <p className="text-sm">
+                <span className="text-gray-500">Home</span> &gt;{" "}
+                <span className="text-black">Shop</span>
+              </p>
+            </Link>
+          </div>
+        </div>
+      </div>
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -102,8 +123,8 @@ const Shop = () => {
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a className="block relative h-48 rounded overflow-hidden">
                 <Image
-                height={100}
-                width={100}
+                  height={100}
+                  width={100}
                   alt="img"
                   className="object-cover object-center w-full h-full block"
                   src="/Mask group (3).png"
