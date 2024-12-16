@@ -65,7 +65,7 @@ export default function ProductPage() {
                 className=" text-sm h-[31px] w-[131px] mt-[600px] px-6 py-2 border-2 border-gray-300 rounded-md text-black hover:bg-blue-300 justify-center items-center"
               >
                 <Link href={"/Check_Out"}>
-                  <span className="text-sm"> Checkout</span>
+                  <span className="text-sm">Checkout</span>
                 </Link>
               </button>
               <button className="flex justify-center items-center text-sm h-[31px] w-[131px] mt-[600px] px-10 py-2 border-2 border-gray-300 rounded-md text-black hover:bg-blue-300">
